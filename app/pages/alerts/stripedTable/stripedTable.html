@@ -1,0 +1,24 @@
+<div class="vertical-scroll">
+  <table class="table table-striped" style="color:black">
+    <thead>
+    <tr>
+      <th class="table-id">#</th>
+      <th>Alert Level</th>
+      <th>Rule Name</th>
+      <th>Recon Name</th>
+      <th>Record Mismatch</th>
+      <th>Record Missing</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of smartTableData">
+      <td class="table-id">{{ item.id }}</td>
+      <td>{{ item.AlertLevel }}</td>
+      <td>{{ item.RuleName }}</td>
+      <td>{{ item.ReconName }}</td>
+      <td>{{ item.RecordMismatch }}</td>
+      <td>{{ item.RecordMissing }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
